@@ -1,0 +1,28 @@
+{
+  "name": "proast",
+  "version": "1.0.0",
+  "description": "toasts for all",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morriswchris/proast.git"
+  },
+  "author": "Chris Morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morriswchris/proast/issues"
+  },
+  "homepage": "https://github.com/morriswchris/proast",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-nodemon": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}
