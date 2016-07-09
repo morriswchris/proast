@@ -32,7 +32,7 @@ body {
 body {
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-shadow: 0 1px 3px #A2979B;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -41,8 +41,9 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-color: #8BA9B1;
+  /*-webkit-box-shadow: inset 0 0 100px #A2979B;*/
+          /*box-shadow: inset 0 0 100px #A2979B;*/
 }
 .site-wrapper-inner {
   display: table-cell;
@@ -117,6 +118,13 @@ body {
   font-weight: bold;
 }
 
+#curse {
+  text-transform: capitalize;
+  font-size: 4em;
+  font-family: 'Sniglet', cursive;
+  color: #E0E4CC;
+}
+
 
 /*
  * Footer
@@ -158,6 +166,6 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 75%;
   }
 }
