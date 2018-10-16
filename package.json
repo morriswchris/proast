@@ -2,13 +2,13 @@
   "name": "proast",
   "version": "1.0.0",
   "description": "Toasts for all!",
-  "main": "index.js",
+  "main": "bin/proast",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/proast"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/morriswchris/proast.git"
+    "url": "git+https://github.com/morriswchris/proast.git"
   },
   "keywords": [
     "toasts"
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/morriswchris/proast/issues"
   },
-  "homepage": "https://github.com/morriswchris/proast"
+  "homepage": "https://github.com/morriswchris/proast",
+  "dependencies": {
+    "random-number-csprng": "^1.0.2"
+  }
 }
