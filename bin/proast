@@ -1,0 +1,24 @@
+#!/usr/bin/env node
+
+const https = require('https');
+const randomNumber = require("random-number-csprng");
+https.get('https://raw.githubusercontent.com/morriswchris/proast/master/curses.json', (resp) => {
+  let data = '';
+
+  // A chunk of data has been recieved.
+  resp.on('data', (chunk) => {
+    data += chunk;
+  });
+
+  // The whole response has been received. Print out the result.
+  resp.on('end', () => {
+    let curses = JSON.parse(data).curses;
+    randomNumber(0, curses.length-1)
+    .then((ran) => {
+      console.log(curses[ran]);
+    });
+  });
+
+}).on("error", (err) => {
+  console.log("Error: " + err.message);
+});
