@@ -1,6 +1,6 @@
 {
   "name": "proast",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Toasts for all!",
   "main": "bin/proast",
   "scripts": {
